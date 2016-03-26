@@ -4,7 +4,7 @@ This is a simple project that demonstrates how Spring Cloud components and Netfl
 
 ##Getting Started
 
-After cloneing this repo locally, you can start the server as a standard spring boot application.
+After cloning this repo locally, you can start the server as a standard spring boot application.
 ```bash
 ./gradlew bootRun
 ```
@@ -21,8 +21,8 @@ There are three security endpoints. One that can be accessed by anyone, one that
 | Security Level  | Endpoint |
 | ------------- | ------------- |
 | Anyone  | http://localhost:9000/demo/info  |
-| Any Authenticated User  | localhost:9000/demo/secure/userinfo  |
-| ADMIN Users  | localhost:9000/demo/secure/admininfo  |
+| Any Authenticated User  | http://localhost:9000/demo/secure/userinfo  |
+| ADMIN Users  | http://localhost:9000/demo/secure/admininfo  |
 
 ###Hystrix Circuit Breaker
 There is one endpoint that accesses a service which is wrapped in a hystrix command. The command itself has a 50% chance to fail. If it does fail, then hystrix will return a message from a fallback method. If it fails enough times, then the circuit breaker will trip.
