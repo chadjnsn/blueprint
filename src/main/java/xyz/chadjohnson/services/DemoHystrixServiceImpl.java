@@ -6,31 +6,12 @@ import org.springframework.stereotype.Service;
 import java.util.Random;
 
 /**
- * A service to demonstrate some of the included/enabled features and how they work.
+ * A service to demonstrate how a hystrix command can be setup and used.
  *
  * @author Chad Johnson
  */
-@Service("demoService")
-public class DemoServiceImpl implements DemoService {
-
-    // These 3 methods demonstrate how to secure a service with spring security annotations
-
-    @Override
-    public String getUnsecuredInfo() {
-        return "Some unsecured info";
-    }
-
-    @Override
-    public String getUserInfo() {
-        return "Some info for an authenticated user";
-    }
-
-    @Override
-    public String getAdminInfo() {
-        return "Some super secret admin stuff!";
-    }
-
-    // These 2 methods demonstrate hystrix functionality
+@Service("demoHystrixService")
+public class DemoHystrixServiceImpl implements DemoHystrixService {
 
     /***
      * This is a method that has a 50% chance of failing and throwing a {@link RuntimeException}. When it does,

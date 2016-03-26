@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: blueprint demo
+server:
+  port: 9000
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://wherever.eureka.is/eureka
+    healthcheck:
+      enabled: true
+  instance:
+    statusPageUrlPath: ${management.context-path}/info
+    healthCheckUrlPath: ${management.context-path}/health

@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.method.configuration.Enabl
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import xyz.chadjohnson.services.DemoSecurityService;
 
 /**
  * A class to setup and configure spring security.
@@ -14,7 +15,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
  *     Here we are enabling web security and global method security so we can control which users have access
  *     to which parts of the system. Spring security recommends using global method security at the service
  *     layer instead of the controller layer, which is why you will find security annotations in the
- *     {@link xyz.chadjohnson.services.DemoService} interface. We're also setting up users with a simple in-memory
+ *     {@link DemoSecurityService} interface. We're also setting up users with a simple in-memory
  *     authentication scheme, but in a real project you would want to do something more permanent (and without
  *     passwords in the code base...).
  * </p>

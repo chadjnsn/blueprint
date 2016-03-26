@@ -5,7 +5,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 /**
  * Created by Chad on 3/25/2016.
  */
-public interface DemoService {
+public interface DemoSecurityService {
 
     String getUnsecuredInfo();
 
@@ -14,8 +14,4 @@ public interface DemoService {
 
     @PreAuthorize("hasRole('ADMIN')")
     String getAdminInfo();
-
-    String getInfoThatMightFail();
-
-    String getBackupInfo();
 }
