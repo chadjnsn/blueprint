@@ -9,7 +9,7 @@ public interface DemoSecurityService {
 
     String getUnsecuredInfo();
 
-    @PreAuthorize("hasRole('USER')")
+    @PreAuthorize("isAuthenticated()")
     String getUserInfo();
 
     @PreAuthorize("hasRole('ADMIN')")
