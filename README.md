@@ -1,5 +1,7 @@
 #Blueprint
 
+[![Build Status](https://travis-ci.org/chadjnsn/blueprint.svg?branch=master)](https://travis-ci.org/chadjnsn/blueprint)
+
 This is a simple project that demonstrates how Spring Cloud components and Netflix components interact and can be configured.
 
 ##Getting Started
