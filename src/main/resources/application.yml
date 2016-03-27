@@ -1,8 +1,14 @@
 spring:
   application:
     name: blueprint demo
+  sleuth:
+    sampler:
+      percentage: 0.05
 server:
   port: 9000
+logging:
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [trace=%X{X-Trace-Id:-},span=%X{X-Span-Id:-}] [%15.15t] %-40.40logger{39}: %m%n'
 eureka:
   client:
     serviceUrl:
