@@ -13,9 +13,8 @@ After cloning this repo locally, you can start the server as a standard spring b
 
 Once the application is running, you can access it via any web browser or HTTP client. By default it runs on port 9000, however this can be changed by editing the application.yml file.
 
-##Endpoints
-
-There are several demo endpoints meant to show various functionality.
+##Components
+There are several components demonstrated in this project which are detailed below.
 
 ###Security
 There are three security endpoints. One that can be accessed by anyone, one that can be accessed by any authenticated user, and one that requires an authenticated user with the 'ADMIN' role assigned.
