@@ -1,5 +1,4 @@
 <img src="blueprint.png" />
-#Blueprint
 
 [![Build Status](https://travis-ci.org/chadjnsn/blueprint.svg?branch=master)](https://travis-ci.org/chadjnsn/blueprint)
 
